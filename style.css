@@ -1,0 +1,189 @@
+/* ===== ESTILO GLOBAL ===== */
+body {
+  font-family: 'Segoe UI', Arial;
+  margin: 0;
+  background: #f8fafc; /* fundo claro moderno */
+  color: #2c4266;
+}
+
+/* ===== MENU ===== */
+nav {
+  position: fixed;
+  width: 100%;
+  background: #2c5dce; /* azul escuro moderno */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lista do menu */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+/* Links do menu */
+nav a {
+  color: rgb(87, 22, 226);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Efeito hover */
+nav a:hover {
+  color: #60a5fa;
+}
+
+/* Botão tema */
+nav button {
+  position: absolute;
+  right: 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+  padding: 120px 20px;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ===== TÍTULOS ===== */
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+/* ===== SOBRE ===== */
+#sobre {
+  text-align: center;
+}
+
+/* Foto de perfil */
+.foto {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 3px solid #2563eb;
+}
+
+/* ===== CARDS (LISTAS) ===== */
+ul li {
+  background: white;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #2563eb;
+}
+
+/* ===== FORMULÁRIO ===== */
+.form-contato {
+  max-width: 450px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+/* Botão enviar */
+button[type="submit"] {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #1e40af;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+}
+
+/* ===== IMAGENS ===== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav button {
+    position: static;
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 90px 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* ===== DARK MODE ===== */
+.dark {
+  background: #121d4c;
+  color: white;
+}
+
+/* Ajuste cards no modo escuro */
+.dark ul li {
+  background: #2d3779;
+}

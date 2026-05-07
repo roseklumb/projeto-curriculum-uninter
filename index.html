@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfólio - Rosangela Klumb</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MENU FIXO -->
+<nav>
+  <ul>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#formacao">Formação</a></li>
+    <li><a href="#portfolio">Portfólio</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+
+  <button onclick="alternarTema()">🌙</button>
+</nav>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <h1>Sobre mim</h1>
+
+  <div class="sobre-container">
+    <img src="img/foto.jpg" class="foto">
+
+    <div>
+  
+
+  <p>
+    Sou Rosangela Klumb, profissional da área pública com atuação na área de suporte a usuários. Possuo formação em Administração e interesse contínuo no desenvolvimento de conhecimentos voltados à gestão pública, inovação e melhoria dos processos organizacionais.
+  </p>
+
+  <p>
+    Ao longo da minha trajetória, tenho buscado integrar teoria e prática por meio de estudos e produção acadêmica, contribuindo para reflexões sobre eficiência e modernização no setor público.
+  </p>
+
+  <p>
+    Tenho interesse em temas como políticas públicas, governança e tecnologia aplicada à administração, sempre com foco no aprimoramento profissional e no impacto positivo na sociedade.
+  </p>
+
+  <p>
+    Meus interesses incluem leitura, escrita, estudos para concursos e desenvolvimento de habilidades digitais.
+  </p>
+</section>
+
+<!-- FORMAÇÃO -->
+<section id="formacao">
+  <h1>Formação</h1>
+
+  <ul>
+    <li>Curso superior em Ciência de Dados (em andamento).</li>
+    <li>Curso superior em Administração.</li>
+    <li>Especialização em Gestão Pública.</li>
+    <li>Estudos voltados para Direito e concursos públicos.</li>
+    <li>Conhecimentos em Tecnologia da Informação e suporte a usuários.</li>
+  </ul>
+
+  <h3>Idiomas</h3>
+  <ul>
+    <li>Português: Nativo</li>
+    <li>Inglês: Intermediário</li>
+  </ul>
+</section>
+
+<!-- PORTFÓLIO -->
+<section id="portfolio">
+  <h1>Portfólio</h1>
+
+  <p>Alguns trabalhos e estudos desenvolvidos:</p>
+
+  <ul>
+    <li>Estudos sobre inovação no setor público.</li>
+    <li>Estudos sobre governança de TI no setor público.</li>
+    <li>Estudos sobre terceirização no setor público.</li>
+  </ul>
+
+  <h3>Artigos publicados</h3>
+
+  <ul>
+    <li>
+      <a href="http://dx.doi.org/10.12660/cgpc.v21n69.53902" target="_blank">
+        Artigo 1 – Inovação no setor público e evolução dos modelos de administração pública: o caso do TRE-SC.
+      </a>
+    </li>
+
+    <li>
+      <a href="https://doi.org/10.1590/0034-76121651" target="_blank">
+        Artigo 2 – A percepção dos gestores operacionais sobre os impactos gerados nos processos de trabalho após a implementação das melhores práticas de governança de TI no TRE/SC.
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <h1>Contato</h1>
+
+  <form id="formContato" class="form-contato">
+
+    <div class="campo">
+      <label>Nome</label>
+      <input type="text" id="nome" required>
+    </div>
+
+    <div class="campo">
+      <label>Email</label>
+      <input type="email" id="email" required>
+    </div>
+
+    <div class="campo">
+      <label>Mensagem</label>
+      <textarea id="mensagem" required></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 - Rosangela Klumb</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
