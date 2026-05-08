@@ -149,13 +149,16 @@ img {
 /* Celular */
 @media (max-width: 480px) {
 
-  nav {
+ nav {
+    position: relative;
     flex-direction: column;
+    align-items: center;
   }
 
   nav ul {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
 
   nav button {
@@ -186,4 +189,10 @@ img {
 /* Ajuste cards no modo escuro */
 .dark ul li {
   background: #2d3779;
+}
+.dark nav a {
+  color: #ffffff;
+}
+.dark nav a:hover {
+  color: #93c5fd;
 }
