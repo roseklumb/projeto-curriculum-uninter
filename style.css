@@ -55,7 +55,7 @@ section {
   min-height: 100vh;
   max-width: 900px;
   margin: auto;
-}
+  }
 
 /* ===== TÍTULOS ===== */
 h1 {
@@ -167,7 +167,7 @@ img {
   }
 
   section {
-    padding: 90px 15px;
+    padding: 110px 15px;
   }
 
   h1 {
