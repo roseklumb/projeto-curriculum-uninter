@@ -100,6 +100,7 @@ a {
 /* Define a largura máxima do formulário para melhorar a leitura e evitar que fique muito largo em telas grandes */
 .form-contato {
   max-width: 450px;
+  margin: 0 auto;
 }
 /* Organiza cada campo do formulário em coluna (label acima do input)
    e adiciona espaçamento entre os campos para melhorar a legibilidade */
@@ -135,7 +136,9 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background: #1e40af;
 }
-
+#contato h1 {
+  text-align: center;
+}
 /* ===== FOOTER ===== */
 /* Estiliza o rodapé da página, centralizando o texto
    e definindo cores de fundo e texto para garantir contraste
