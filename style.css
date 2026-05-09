@@ -1,4 +1,5 @@
 /* ===== ESTILO GLOBAL ===== */
+/* Define tipografia, cores principais e fundo do site   */
 body {
   font-family: 'Segoe UI', Arial;
   margin: 0;
@@ -6,7 +7,9 @@ body {
   color: #2c4266;
 }
 
-/* ===== MENU ===== */
+/* ===== MENU FIXO ===== */
+/* Mantém o menu sempre visível durante a navegação      */
+/* Facilita a experiência do usuário em páginas longas   */
 nav {
   position: fixed;
   width: 100%;
@@ -26,7 +29,7 @@ nav ul {
 
 /* Links do menu */
 nav a {
-  color: rgb(87, 22, 226);
+  color:rgb(87, 22, 226);
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
@@ -49,7 +52,8 @@ nav button {
   cursor: pointer;
 }
 
-/* ===== SEÇÕES ===== */
+/* ===== CONFIGURAÇÃO DAS SEÇÕES ===== */
+/* Espaçamento e largura máxima do conteúdo */
 section {
   padding: 120px 20px;
   min-height: 100vh;
@@ -76,7 +80,9 @@ h1 {
   border: 3px solid #2563eb;
 }
 
-/* ===== CARDS (LISTAS) ===== */
+/* ESTILO DOS CARDS                                      */
+/* Aplicado às listas para melhorar organização visual   */
+/* Uso de sombras e bordas arredondadas                  */
 ul li {
   background: white;
   padding: 12px;
@@ -91,16 +97,20 @@ a {
 }
 
 /* ===== FORMULÁRIO ===== */
+/* Define a largura máxima do formulário para melhorar a leitura e evitar que fique muito largo em telas grandes */
 .form-contato {
   max-width: 450px;
 }
-
+/* Organiza cada campo do formulário em coluna (label acima do input)
+   e adiciona espaçamento entre os campos para melhorar a legibilidade */
 .campo {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
-
+/* Estiliza os campos de entrada (input e textarea),
+   adicionando espaçamento interno, bordas arredondadas
+   e tamanho de fonte adequado para melhorar a usabilidade */
 input, textarea {
   padding: 12px;
   border-radius: 8px;
@@ -108,7 +118,9 @@ input, textarea {
   font-size: 14px;
 }
 
-/* Botão enviar */
+/* Estiliza o botão de envio do formulário,
+   definindo cor de fundo, contraste do texto,
+   espaçamento interno e efeito de interação ao passar o mouse */
 button[type="submit"] {
   background: #2563eb;
   color: white;
@@ -118,12 +130,16 @@ button[type="submit"] {
   cursor: pointer;
   transition: 0.3s;
 }
-
+/* Altera a cor do botão ao passar o mouse,
+   fornecendo feedback visual e indicando que o elemento é interativo */
 button[type="submit"]:hover {
   background: #1e40af;
 }
 
 /* ===== FOOTER ===== */
+/* Estiliza o rodapé da página, centralizando o texto
+   e definindo cores de fundo e texto para garantir contraste
+   e boa legibilidade */
 footer {
   text-align: center;
   background: #0f172a;
@@ -132,6 +148,8 @@ footer {
 }
 
 /* ===== IMAGENS ===== */
+/* Torna as imagens responsivas, ajustando sua largura ao container
+   sem distorcer, mantendo a proporção original em diferentes telas */
 img {
   max-width: 100%;
   height: auto;
@@ -140,41 +158,43 @@ img {
 /* ===== RESPONSIVIDADE ===== */
 
 /* Tablet */
+/* Ajustes para telas médias (tablets e dispositivos menores) */
 @media (max-width: 768px) {
+  /* Reduz o tamanho do título para melhor adaptação em telas menores */
   h1 {
     font-size: 2rem;
   }
 }
 
-/* Celular */
+/* Ajustes específicos para dispositivos móveis (celulares) */
 @media (max-width: 480px) {
-
+/* Mantém o menu organizado e centralizado na tela */
  nav {
     flex-direction: row;
     justify-content: center;
   }
-
+/* Permite rolagem horizontal do menu caso os itens não caibam na tela */
   nav ul {
     flex-direction: row;
     overflow-x: auto;
     white-space: nowrap;
     gap: 12px;
   }
-
+/* Ajusta o botão de tema para melhor posicionamento no mobile */
   nav button {
     position: static;
     margin-top: 10px;
   }
-
+/* Reduz o espaçamento das seções para melhor aproveitamento da tela */
   section {
     padding: 110px 15px;
   }
-
+/* Diminui e centraliza os títulos para melhor leitura em telas pequenas */
   h1 {
     font-size: 1.6rem;
     text-align: center;
   }
-
+/* Faz o botão ocupar toda a largura, facilitando o toque no celular */
   button[type="submit"] {
     width: 100%;
   }
